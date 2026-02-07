@@ -10,6 +10,14 @@
 			"resources/*.png"
 		]
 	},
+	"settings": {
+		"disablemod": {
+			"type": "bool",
+			"name": "Have You Seen The Fit?",
+			"description": "Have you though? (If enabled, disables the mod)",
+			"default": false
+		}
+	},
 	"id": "saritahhh.radiation",
 	"name": "Radiation",
 	"version": "v1.0.0",

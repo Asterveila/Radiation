@@ -20,6 +20,8 @@ class $modify(YesTobyWeSeeTheFit, PlayLayer) {
 	void setupHasCompleted() {
 		PlayLayer::setupHasCompleted();
 
+		if (Mod::get()->getSettingValue<bool>("disablemod")) return;
+
 		auto fields = m_fields.self();
 		auto winSize = CCDirector::sharedDirector()->getWinSize();
 
@@ -40,6 +42,8 @@ class $modify(YesTobyWeSeeTheFit, PlayLayer) {
 
 	void postUpdate(float p0) {
 		PlayLayer::postUpdate(p0);
+		
+		if (Mod::get()->getSettingValue<bool>("disablemod")) return;
 
 		auto fields = m_fields.self();
 
